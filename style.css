@@ -10,22 +10,31 @@ body {
     resize: none;
     color: #000000;
     border-left: 1px solid black;
-    padding: 10px;
+    padding: 5px;
+    border-radius: 15px;
   }
   
   .jumbotron {
     text-align: center;
-    background-color: transparent;
-    color: black;
+    background-color: rgb(89, 2, 92);
+    color: rgb(208, 171, 209);
     border-radius: 0;
     border-bottom: 10px solid black;
+    font-family: 'Ranchers', cursive;
   }
   
-  .description{
+  #currentDay{
+    font-weight: bolder;
+    font-family: 'Ranchers', cursive;;
+    font-size: 50px;
+    
+  
+  /* .description{
     white-space: pre-wrap;
-  }
-  
-  .time-block{
+  } */
+
+
+  .time-block {
     text-align: center;
     border-radius: 15px;
   }
@@ -43,17 +52,17 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #a8a8a8;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: #f75048;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: #31d631;
     color: white;
   }
   
