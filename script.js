@@ -1,8 +1,8 @@
 var currentDay = document.querySelector("#currentDay")
 var hour = parseInt(moment().format('H'))
-console.log(hour)
+//console.log(hour)
 var rowsClass = document.getElementsByClassName('row')
-
+var textArea = document.querySelector("textarea")
 // add current date to the jumbotron using the id from html  
 var date = moment().format('LL')
 $("#currentDay").text(date)
@@ -34,3 +34,10 @@ $("#currentDay").text(date)
 
 //always processing the hour to keep hour block the appropriate color
 hourTrack();
+
+// when click the save button the text in 'textarea' portion of html
+// this will be done using local storage
+$(".saveBtn").on("click", function() {
+    console.log(textArea.value)
+    
+})
