@@ -37,7 +37,32 @@ hourTrack();
 
 // when click the save button the text in 'textarea' portion of html
 // this will be done using local storage
+
+// var saveButton = document.querySelector(".saveBtn")
 $(".saveBtn").on("click", function() {
-    console.log(textArea.value)
-    
-})
+    var timeId = $(this).parent().attr("id")
+ //    console.log(timeId)
+    var userInput = $(this).siblings(".task").val()
+ //    console.log(userInput)
+ 
+     localStorage.setItem(timeId, userInput)
+ })
+
+
+function saveInfo() {
+    $(".time-block").each(function(){
+
+        
+
+        var block = $(this).attr("id")
+        // console.log(block)
+
+        var saved = localStorage.getItem(block)
+
+        if (saved !== null) {
+            $(this).children(".task").html(saved)
+        }
+    })
+}
+saveInfo();
+

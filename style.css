@@ -54,9 +54,13 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
+    background-color: #fa8e35;
     color: #000000;
+    font-weight: bolder;
     border-top: 1px dashed #000000;
+    border-radius: 15px;
+    text-align: center;
+
   }
   
   .past {
