@@ -48,7 +48,7 @@ $(".saveBtn").on("click", function() {
      localStorage.setItem(timeId, userInput)
  })
 
-
+//retrieving the information saved in local storage and keeping it in the same place after refresh
 function saveInfo() {
     $(".time-block").each(function(){
 
